@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 import React, { createContext, useState, useEffect } from "react";
 import axios from "axios";
 
@@ -8,7 +7,7 @@ const CartProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
   const token = localStorage.getItem("token");
 
-  const BASE_URL = process.env.REACT_APP_API_URL;
+  const BASE_URL = import.meta.env.VITE_API_URL;
   const API_URL = `${BASE_URL}/cart`;
 
   const getAuthHeaders = () => ({

@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
@@ -12,7 +11,7 @@ export default function Signup() {
   const [phone, setPhone] = useState("");
   const navigate = useNavigate();
 
-  const BASE_URL = process.env.REACT_APP_API_URL;
+  const BASE_URL = import.meta.env.VITE_API_URL;
 
   const signup = async () => {
     if (!fullName || !username || !password || !phone) {
