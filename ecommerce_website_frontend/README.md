@@ -1,12 +1,29 @@
-# React + Vite
+# 🛍️ E-Commerce Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack e-commerce web application built with **React (frontend)** and **Node.js + Express + MongoDB (backend)**.  
+This project allows users to browse products, filter/search, manage their shopping cart, sign up, log in, and proceed to checkout.
 
-Currently, two official plugins are available:
+🚀 Live Demo: [E-Commerce Website]()
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
+- 🔑 User Authentication (Signup/Login with JWT)
+- 🛒 Shopping Cart (Add, Update, Remove items)
+- 🏷️ Product Filtering (by category, price, search, and sort)
+- ✅ Checkout with cart clearing
+- 🔔 Toast notifications for actions (login, signup, cart updates)
+- 📦 Backend API connected with MongoDB
+- 🌐 Deployment ready (Render for backend)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+- **Frontend:** React, React Router, Axios, React-Toastify  
+- **Backend:** Node.js, Express.js, MongoDB, JWT Authentication  
+- **Deployment:** Render (backend), Vercel (frontend)  
+
+---
+
+## 👩‍💻 Author
+Developed by **Yukta Mahajan**
