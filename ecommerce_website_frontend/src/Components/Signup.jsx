@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
@@ -11,6 +12,8 @@ export default function Signup() {
   const [phone, setPhone] = useState("");
   const navigate = useNavigate();
 
+  const BASE_URL = process.env.REACT_APP_API_URL;
+
   const signup = async () => {
     if (!fullName || !username || !password || !phone) {
       toast.warn("Please fill all fields");
@@ -18,7 +21,7 @@ export default function Signup() {
     }
 
     try {
-      const res = await axios.post("http://localhost:8000/auth/signup", {
+      const res = await axios.post(`${BASE_URL}/auth/signup`, {
         fullName,
         username,
         password,
@@ -30,10 +33,11 @@ export default function Signup() {
         localStorage.setItem("user", JSON.stringify(res.data.user));
 
         toast.success("Signup successful!");
-        setTimeout(() => navigate("/items"), 1500); 
+        setTimeout(() => navigate("/items"), 1500);
       }
     } catch (err) {
       toast.error(err.response?.data?.message || "Signup failed");
+      console.error("Signup error:", err);
     }
   };
 
