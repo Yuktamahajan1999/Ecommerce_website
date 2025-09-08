@@ -17,6 +17,7 @@ app.use(
       "http://localhost:3000",
       "http://localhost:5173",
       "http://localhost:5174",
+      "https://ecommerce-website-livid-phi.vercel.app"
     ],
     credentials: true,
   })
