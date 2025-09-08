@@ -3,7 +3,7 @@
 A full-stack e-commerce web application built with **React (frontend)** and **Node.js + Express + MongoDB (backend)**.  
 This project allows users to browse products, filter/search, manage their shopping cart, sign up, log in, and proceed to checkout.
 
-🚀 Live Demo: [E-Commerce Website]()
+🚀 Live Demo: [E-Commerce Website](https://ecommerce-website-livid-phi.vercel.app/)
 
 ---
 
